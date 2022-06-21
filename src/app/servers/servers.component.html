@@ -4,7 +4,7 @@
       <a
         href="#"
         class="list-group-item"
-        [routerLink]="['/servers', 5, 'edit']"
+        [routerLink]="['/servers', server.id]"
         [queryParams]="{ allowEdit: '1' }"
         fragment="loading"
         *ngFor="let server of servers"
@@ -18,6 +18,6 @@
     <!-- <a routerLink="/servers">Reload</a> -->
     <app-edit-server></app-edit-server>
     <hr />
-    <app-server></app-server>
+    <!-- <app-server></app-server> -->
   </div>
 </div>
